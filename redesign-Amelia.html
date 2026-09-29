@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style-Amelia.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <nav class="top-nav">
+        <a href="#info-table">Lihat Gelombang Registrasi</a>
+    </nav>
+
+    <form class="container" action="form.html" method="get">
+
+        <h2>Registration Form</h2>
+
+        <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" required>
+        </div>
+
+        <fieldset>
+            <legend>Gender</legend>
+
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+            </div>
+
+            <div class="radio-group">
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+
+            <div class="radio-group">
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Hobbies</legend>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="reading" name="hobbies" value="reading">
+                <label for="reading">Reading</label>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="sports" name="hobbies" value="sports">
+                <label for="sports">Sports</label>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="music" name="hobbies" value="music">
+                <label for="music">Music</label>
+            </div>
+
+            <div class="form-group">
+                <input type="text" id="otherHobby" name="otherHobby"
+                    placeholder="Type your other hobbies here...">
+            </div>
+
+        </fieldset>
+
+        <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <div class="form-group">
+            <label for="program">Program of Study</label>
+
+            <select id="program" name="program" required>
+                <option value="">Select a program...</option>
+                <option value="information_systems">Information Systems</option>
+                <option value="computer_science">Computer Science</option>
+                <option value="Business_management">Business Management</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Full Address</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <div class="table-card" id="info-table">
+
+        <h3>Jadwal Gelombang Registrasi</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Gelombang</th>
+                    <th>Tanggal Buka</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Gelombang 1</td>
+                    <td>1 Januari - 31 Maret</td>
+                </tr>
+
+                <tr>
+                    <td>Gelombang 2</td>
+                    <td>1 April - 30 Juni</td>
+                </tr>
+
+                <tr>
+                    <td>Gelombang 3</td>
+                    <td>1 Juli - 31 Agustus</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+</html>
